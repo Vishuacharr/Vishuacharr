@@ -109,6 +109,3 @@ rag-document-intelligence/
 - **UI**: Streamlit
 - **Deployment**: Docker Compose + GitHub Actions
 
-## 📄 License
-
-MIT — see [LICENSE](LICENSE)
