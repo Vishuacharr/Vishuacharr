@@ -112,6 +112,3 @@ utd-ai-chatbot/
 - **Training data**: 10GB UTD academic content (courses, advisories, FAQs)
 - **Training**: 3 epochs, batch size 4, gradient accumulation 4
 
-## 📄 License
-
-MIT — see [LICENSE](LICENSE)
