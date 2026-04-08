@@ -154,6 +154,3 @@ python src/training/train.py \
 - **UI**: Streamlit + OpenCV
 - **Deployment**: Docker + NVIDIA Container Toolkit (GPU)
 
-## 📄 License
-
-MIT — see [LICENSE](LICENSE)
