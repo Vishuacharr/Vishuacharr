@@ -6,7 +6,6 @@
 [![Delta Lake](https://img.shields.io/badge/Delta_Lake-3.2-003366)](https://delta.io)
 [![Kafka](https://img.shields.io/badge/Kafka-3.7-231F20?logo=apachekafka)](https://kafka.apache.org)
 [![AWS](https://img.shields.io/badge/AWS-S3%20%7C%20EMR%20%7C%20Glue-232F3E?logo=amazonaws)](https://aws.amazon.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
 
