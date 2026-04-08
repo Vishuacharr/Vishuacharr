@@ -1,0 +1,62 @@
+name: CI — RAG Document Intelligence
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_DB: ragdb
+          POSTGRES_USER: raguser
+          POSTGRES_PASSWORD: ragpass
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt pytest pytest-asyncio httpx
+
+      - name: Run unit tests
+        run: pytest tests/ -v --tb=short
+        env:
+          PGVECTOR_URL: postgresql://raguser:ragpass@localhost:5432/ragdb
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+  docker:
+    runs-on: ubuntu-latest
+    needs: test
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t rag-document-intelligence:latest .
+
+      - name: Run container smoke test
+        run: |
+          docker run -d -p 8000:8000 \
+            -e PGVECTOR_URL=postgresql://test:test@localhost/testdb \
+            -e OPENAI_API_KEY=test \
+            rag-document-intelligence:latest
+          sleep 5
+          curl -f http://localhost:8000/health
