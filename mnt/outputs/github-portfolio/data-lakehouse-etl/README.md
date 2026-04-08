@@ -98,7 +98,3 @@ data-lakehouse-etl/
 ├── docker-compose.yml
 └── requirements.txt
 ```
-
-## 📄 License
-
-MIT — see [LICENSE](LICENSE)
