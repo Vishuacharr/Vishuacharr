@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Vishruth%20Acharya&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=AI%20Engineer%20%7C%20MS%20Business%20Analytics%20%26%20AI%20%40%20UTD&descAlignY=55&descSize=18" width="100%"/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=6AD3F7&center=true&vCenter=true&width=600&lines=Building+Intelligent+Systems+%F0%9F%A4%96;RAG+Pipelines+%7C+Vision+AI+%7C+LLMs;LangChain+%7C+YOLOv8+%7C+PySpark;From+Data+to+Decisions+%E2%9A%A1)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=6AD3F7&center=true&vCenter=true&width=700&lines=Building+Intelligent+Systems+%F0%9F%A4%96;Multi-Agent+Pipelines+%7C+LangGraph+%7C+LLMs;Fintech+AI+%7C+Lending+Automation+%7C+TRID+Compliance;RAG+Pipelines+%7C+Vision+AI+%7C+LLM+Fine-Tuning;From+Data+to+Decisions+%E2%9A%A1)](https://git.io/typing-svg)
 
 </div>
 
@@ -15,8 +15,8 @@ vishruth = {
     "role"       : "AI Engineer",
     "education"  : "MS Business Analytics & AI — UT Dallas (2025)",
     "background" : "BE Mechanical Engineering — VTU Bangalore (2020)",
-    "focus"      : ["RAG Pipelines", "Vision AI (YOLO)", "LLM Fine-Tuning", "Data Lakehouse"],
-    "tools"      : ["Python", "LangChain", "YOLOv8", "PySpark", "AWS", "Docker", "Kubernetes"],
+    "focus"      : ["Multi-Agent Systems", "Fintech AI", "RAG Pipelines", "Vision AI", "LLM Fine-Tuning"],
+    "tools"      : ["Python", "LangGraph", "LangChain", "YOLOv8", "PySpark", "AWS", "Docker"],
     "contact"    : "vishruthacharr@gmail.com"
 }
 ```
@@ -24,6 +24,31 @@ vishruth = {
 ---
 
 ## 🚀 Featured Projects
+
+### 🏦 Fintech & Lending AI
+
+<table>
+<tr>
+<td width="50%">
+
+### 🏗️ [AI Lending Pipeline](https://github.com/Vishuacharr/ai-lending-pipeline)
+**LangGraph multi-agent system** automating loan processing with 5 specialized agents: income verifier, TRID compliance, CD balancer, appraisal analyzer, and doc classifier. Conditional routing, shared memory, and full audit trail — zero API calls, pure rule-based decisioning.
+
+`LangGraph` `Pydantic` `Streamlit` `Multi-Agent` `TRID`
+
+</td>
+<td width="50%">
+
+### 🛡️ [Lending AI Guardrails](https://github.com/Vishuacharr/lending-ai-guardrails)
+**Production guardrail layer** for lending AI responses: faithfulness scoring, relevance scoring, accuracy checks, and confidence-based routing. CFPB-compliant audit trail with per-response risk classification.
+
+`LangGraph` `RAGAS` `FastAPI` `CFPB Compliance` `Audit Trail`
+
+</td>
+</tr>
+</table>
+
+### 🤖 AI / ML
 
 <table>
 <tr>
@@ -38,7 +63,7 @@ vishruth = {
 <td width="50%">
 
 ### 👁️ [YOLO Vision AI](https://github.com/Vishuacharr/yolo-vision-ai)
-**Real-time object detection** using YOLOv8 with a FastAPI inference server, Streamlit UI, and Docker deployment. Supports webcam, video, and REST API modes.
+**Real-time object detection** using YOLOv8 with a FastAPI inference server, Streamlit UI, and Docker deployment. Supports webcam, video, and REST API modes at 30+ FPS.
 
 `YOLOv8` `OpenCV` `FastAPI` `Streamlit` `Docker`
 
@@ -70,7 +95,7 @@ vishruth = {
 
 <div align="center">
 
-**AI / ML**
+**AI / ML & Agents**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
